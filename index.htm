@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      body {
+        background-color: var(--site-background);
+        overflow-x: hidden;
+      }
+      #navbar {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        border: px solid red;
+      }
+      #navbar > #banner {
+        width: 50%;
+        height: 50px;
+        margin: auto;
+        display: flex;
+        border: px solid blue;
+        justify-content: space-evenly;
+      }
+      #main-nav-bar > div:last-child > div {
+        width: 100%;
+        height: 50px;
+        border: px solid red;
+        display: flex;
+      }
+      #main-nav-bar {
+        width: 100%;
+        height: 120px;
+        border: px solid purple;
+        margin: auto;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        left: 0;
+      }
+      #navbar {
+        overflow: hidden;
+      }
+
+      #main-nav-upper {
+        width: 100%;
+        height: 40%;
+        border: px solid rgba(0, 34, 128, 0);
+        display: flex;
+        margin: auto;
+        gap: 30%;
+        justify-content: space-evenly;
+      }
+      #main-nav-upper > div {
+        justify-content: space-between;
+      }
+      #main-nav-bottom {
+        width: 98%;
+        height: 40%;
+        border: 2px solid rgba(0, 34, 128, 0);
+        display: flex;
+        margin: auto;
+        justify-content: space-evenly;
+      }
+      #left-side {
+        display: flex;
+        width: 30%;
+        border: px solid red;
+        height: 100%;
+      }
+      #left-side > div {
+        border: px solid salmon;
+        width: auto;
+        text-align: center;
+        margin: auto;
+      }
+      a > img {
+        width: 150px;
+      }
+
+      #right-side {
+        display: flex;
+        width: 30%;
+        border: px solid rgb(0, 255, 179);
+        height: 100%;
+      }
+      #right-side > div {
+        border: px solid salmon;
+        width: auto;
+        text-align: center;
+      }
+      #right-side input {
+        width: 292px;
+        height: 42px;
+      }
+      #main-nav-bottom > li {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, 10px);
+        border: px solid red;
+        gap: 20px;
+      }
+      #main-nav-bar a {
+        text-decoration: none;
+      }
+      #main-nav-bar a:hover {
+        color: teal;
+      }
+      #main-1 {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      #box {
+        width: 392px;
+        height: 568px;
+      }
+      #main-1 img {
+        width: 392px;
+        height: 568px;
+      }
+      #txtdiv {
+        text-align: center;
+        margin-bottom: 300px;
+        background-color: teal;
+      }
+      #main-2 {
+        padding-top: 80px;
+        display: flex;
+        margin: auto;
+        width: 90%;
+        height: 600px;
+      }
+      #main-2-1 {
+        width: 954px;
+        height: 665;
+      }
+      #main-2-1 > img {
+        width: 100%;
+      }
+      #main-2-2 {
+        width: 467px;
+        height: 500px;
+        border: 1px solid red;
+      }
+      #main-2-2 > img {
+        width: 400px;
+        height: 500px;
+      }
+      #main-3 {
+        margin: auto;
+        width: 90%;
+        height: 500px;
+        border: 1px solid lawngreen;
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      #main-3 img {
+        width: 100%;
+        height: 500px;
+      }
+      #main-3 div {
+        position: absolute;
+        bottom: 8px;
+        margin-left: 50%;
+        justify-content: center;
+        align-items: baseline;
+        background-color: white;
+        color: black;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+      }
+      #main-4 {
+        display: flex;
+        width: 90%;
+        height: auto;
+        margin: auto;
+        margin-top: 35px;
+      }
+      #main-4 > div {
+        width: 31.5%;
+        height: 400px;
+        margin: auto;
+        border: 1px solid darkblue;
+      }
+      #main-4 a {
+        height: auto;
+        width: auto;
+      }
+      #main-4 > div img {
+        width: 100%;
+        height: 400px;
+      }
+      #main-5 {
+        padding-top: 50px;
+
+        border: 1px solid red;
+        margin: auto;
+        width: 90%;
+      }
+      #main-5-2 {
+        display: flex;
+        margin-top: 50px;
+        margin: auto;
+
+        grid-template-columns: repeat(5, 1fr);
+        border: 1px solid red;
+        margin: auto;
+        width: 100%;
+        justify-content: space-evenly;
+      }
+      #box5 {
+        width: 300px;
+        height: 402px;
+      }
+      #main-5 img {
+        width: 200px;
+        height: 300px;
+      }
+      #main-6 {
+        padding-top: 50px;
+
+        border: 1px solid red;
+        margin: auto;
+        width: 90%;
+        display: flex;
+
+        margin-top: 50px;
+
+        grid-template-columns: repeat(5, 1fr);
+
+        margin: auto;
+
+        justify-content: space-evenly;
+      }
+      #main-6 img {
+        width: 200px;
+        height: 300px;
+      }
+      #main-7 {
+        padding-top: 50px;
+
+        border: px solid red;
+        margin: auto;
+        width: 90%;
+        display: flex;
+
+        margin-top: 50px;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        margin: auto;
+
+        justify-content: space-evenly;
+      }
+      #main-7 > div {
+        justify-content: space-evenly;
+      }
+      #main-7 img {
+        width: 350px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div id="navbar">
+        <div id="banner">
+          <p>Our studies show: you NEED these</p>
+          <p class="c-pwa-live-text-banner__heading">
+            Trending for Fall: Prep's Cool
+          </p>
+          <a href="">Shop the edit</a>
+        </div>
+
+        <div>
+          <div>
+            <p>English</p>
+            <div>
+              <p>
+                SignUp <span><a href=""></a></span>/SignIn <a href=""></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="main-nav-bar">
+        <div id="main-nav-upper">
+          <div id="left-side">
+            <div>
+              <a href="">
+                <img
+                  src="https://images.ctfassets.net/5de70he6op10/53ZOE4rRqrxcvv0hg2eSLV/a849085e5f600c618132be2475017746/anthro-logo.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img
+                  src="https://images.ctfassets.net/5de70he6op10/y1O9tEDOvCGliGUvT9RoJ/eb8ab4734c5e3778b8b61da70ed441ac/AL_NewLogo_2.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div id="right-side">
+            <div><input type="search" placeholder="Search" /></div>
+            <div>
+              <a href=""
+                ><i class="fa fa-shopping-bag" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div id="main-nav-bottom">
+          <li><a href="">New!</a></li>
+          <li><a href="">Dresses</a></li>
+          <li><a href="">Clothing</a></li>
+          <li><a href="">Shoes</a></li>
+          <li><a href="">Accessories</a></li>
+          <li><a href="">Gifts & Candles</a></li>
+          <li><a href="">Home & Furiture</a></li>
+          <li><a href="">Beauty & Wellness</a></li>
+          <li><a href="">Garden & Outdoor</a></li>
+          <li><a href="">Weddings</a></li>
+          <li><a href="">Sale</a></li>
+        </div>
+      </div>
+      <div id="main-1"></div>
+      <div id="main-2">
+        <div id="main-2-1">
+          <img
+            src="https://images.ctfassets.net/5de70he6op10/5JhjcmPBuPSEb8FMLX6saJ/ae5e83bf2d7c01b6bc317b6218f28e07/LS_M3a.jpg?w=1756&q=80&fm=webp"
+            alt="1"
+          />
+          <div id="txtdiv">Explore the exclusive collab</div>
+        </div>
+        <div id="main-2-2">
+          <img
+            src="https://images.ctfassets.net/5de70he6op10/6RIAy1GvAtHvLWJXjpQ4SK/a582e679fc7fdd412b7b436788a452d3/LS_M3b.jpg?w=856&q=80&fm=webp"
+            alt=""
+          />
+          <div>take the Fall 2022 house tour</div>
+        </div>
+      </div>
+      <div id="main-3">
+        <a href=""
+          ><img
+            src="https://images.ctfassets.net/5de70he6op10/51jxVcrlgwRBy7jGQsReWZ/6f93be96e56d503f20e1138ac0124dd6/LS_M4.jpg?w=2694&q=80&fm=webp"
+            alt=""
+        /></a>
+        <div><a href="">Shop Dresses</a></div>
+      </div>
+      <div id="main-4">
+        <div>
+          <a href="">
+            <img
+              src="https://images.ctfassets.net/5de70he6op10/6Vs1tWuvDr4VH2IL8BtlDa/f90d4888cf7e8e1436eb4fffb653f784/RR_sweaters.jpg?w=856&q=80&fm=webp"
+              alt=""
+            />
+          </a>
+          <div><a href=""></a></div>
+        </div>
+        <div>
+          <a href="">
+            <img
+              src="https://images.ctfassets.net/5de70he6op10/2MfDHKENHTX4LnaiNReUCZ/e2b4384e507722496e92ab224a6ff6de/RR_Kitchen_Dining.jpg?w=856&q=80&fm=webp"
+              alt=""
+            />
+          </a>
+          <div><a href=""></a></div>
+        </div>
+        <div>
+          <a href="">
+            <img
+              src="https://images.ctfassets.net/5de70he6op10/6nklHli9n16QG5uk7F0XEE/cede8948e803d7958225a1f0cfd0b2e6/RR_Bedding.jpg?w=856&q=80&fm=webp"
+              alt=""
+            />
+          </a>
+          <div><a href=""></a></div>
+        </div>
+      </div>
+      <div id="main-5">
+        <div id="main-5-1">You may also LIke</div>
+        <div id="main-5-2"></div>
+      </div>
+      <div id="main-6"></div>
+      <div id="main-7"></div>
+    </div>
+  </body>
+</html>
+<script>
+  main1Obj = [
+    {
+      imgUrl:
+        "https://images.ctfassets.net/5de70he6op10/167rhLDYGG4umOBC9KiQYh/1b971d445595af2087676177e1b2703d/LS_M1a.jpg?w=856&q=80&fm=webp",
+      link: "shopNew.html",
+      AccBoxText: "ShopNew",
+    },
+    {
+      imgUrl:
+        "https://images.ctfassets.net/5de70he6op10/2yywsh5Tmi0RZIHxaFM4LD/5b63c5642f0fd4c3166aef725fc72e67/LS_M1b.jpg?w=856&q=80&fm=webp",
+      link: "ShopTops.html",
+      AccBoxText: "Shop Tops",
+    },
+    {
+      imgUrl:
+        "https://images.ctfassets.net/5de70he6op10/261xhq4wDbiuPONBeDFU36/76fcf00868e9f3d13911ab32892da6f8/LS_M1c.jpg?w=856&q=80&fm=webp",
+      link: "ShopDress.html",
+      AccBoxText: "ShopDress",
+    },
+    {
+      imgUrl:
+        "https://images.ctfassets.net/5de70he6op10/2MCrpgTOHt98PRQoZ0FgAN/f1dcb908c505bf267f52278e71d0d27b/LS_M2a.jpg?w=856&q=80&fm=webp",
+      link: "ShopNewAccessories.html",
+      AccBoxText: "Shop New Accessories",
+    },
+    {
+      imgUrl:
+        "https://images.ctfassets.net/5de70he6op10/4yWotyhGrGoTlrjRxv2Q7Y/e659ba3be2897f62f0f747abde5ebc07/LS_M2b.jpg?w=856&q=80&fm=webp",
+      link: "ShopBoots.html",
+      AccBoxText: "Shop Boots",
+    },
+    {
+      imgUrl:
+        "https://images.ctfassets.net/5de70he6op10/1QQAxAOJVOhQlpxkW8fHnI/152657c334f68098bff17a44078ed360/LS_M2c.jpg?w=856&q=80&fm=webp",
+      link: "shopPants",
+      AccBoxText: "Shop Pants",
+    },
+  ];
+  main1Obj.forEach(function (el) {
+    box = document.createElement("div");
+    box.setAttribute("id", "box");
+
+    Alink = document.createElement("a");
+    Alink.setAttribute("herf", el.link);
+    Alink.style.cursor = "pointer";
+
+    main_img = document.createElement("img");
+    main_img.setAttribute("src", el.imgUrl);
+    main_img.setAttribute("id", "link_image");
+    AccBox = document.createElement("div");
+    AccBox.setAttribute("id", "Accbox");
+    AccBox.innerText = el.AccBoxText;
+
+    Alink.append(main_img, AccBox);
+    box.append(Alink);
+    document.querySelector("#main-1").append(box);
+  });
+
+  main5obj = [
+    {
+      img_Url:
+        "https://images.urbndata.com/is/image/Anthropologie/4114376680071_006_b2?$an-category$&qlt=80&fit=constrain",
+      link: "QuickShop.html",
+    },
+    {
+      img_Url:
+        "https://images.urbndata.com/is/image/Anthropologie/4122570520023_091_b14?$an-category$&qlt=80&fit=constrain",
+      link: "QuickShop.html",
+    },
+    {
+      img_Url:
+        "https://images.urbndata.com/is/image/Anthropologie/4122261180521_004_b14?$an-category$&qlt=80&fit=constrain",
+      link: "QuickShop.html",
+    },
+
+    {
+      img_Url:
+        "https://images.urbndata.com/is/image/Anthropologie/4122261180521_004_b14?$an-category$&qlt=80&fit=constrain",
+
+      link: "QuickShop.html",
+    },
+    {
+      img_Url:
+        "https://images.urbndata.com/is/image/Anthropologie/4130089450012_049_b2?$an-category$&qlt=80&fit=constrain",
+
+      link: "QuickShop.html",
+    },
+  ];
+
+  main5obj.map(function (el) {
+    box = document.createElement("div");
+    box.setAttribute("id", "box-5");
+
+    Alink = document.createElement("a");
+
+    main_img = document.createElement("img");
+    main_img.setAttribute("src", el.img_Url);
+    main_img.setAttribute("id", "link_image");
+
+    Alink.append(main_img);
+    box.append(Alink);
+    document.querySelector("#main-5-2").append(box);
+  });
+
+  main6obj = [
+    {
+      img_Url:
+        "https://images.urbndata.com/is/image/Anthropologie/4114376680071_006_b?$an-category$&qlt=80&fit=constrain",
+      text: "Maeve Wide Leg Pants",
+    },
+    {
+      img_Url:
+        "https://images.urbndata.com/is/image/Anthropologie/4123650590185_010_b?$an-category$&qlt=80&fit=constrain",
+      text: "Maeve Wide Leg Pants",
+    },
+    {
+      img_Url:
+        "https://images.urbndata.com/is/image/Anthropologie/76101849_001_b?$an-category$&qlt=80&fit=constrain",
+      text: "Maeve Wide Leg Pants",
+    },
+    {
+      img_Url:
+        "https://images.urbndata.com/is/image/Anthropologie/4123650590131_001_b15?$an-category$&qlt=80&fit=constrain",
+      text: "Maeve Wide Leg Pants",
+    },
+    {
+      img_Url:
+        "https://images.urbndata.com/is/image/Anthropologie/4110914810002_069_b?$an-category$&qlt=80&fit=constrain",
+      text: "Maeve Wide Leg Pants",
+    },
+  ];
+  main6obj.map(function (el) {
+    box = document.createElement("div");
+    box.setAttribute("id", "box-6");
+
+    Alink = document.createElement("a");
+
+    main_img = document.createElement("img");
+    main_img.setAttribute("src", el.img_Url);
+    main_img.setAttribute("id", "link_image");
+    Alink.append(main_img);
+    box.append(Alink);
+    document.querySelector("#main-6").append(box);
+  });
+
+  main7Obj = [
+    {
+      img_Url:
+        "https://images.ctfassets.net/5de70he6op10/3pW03PezVotGmhIJvEkirV/22edfed33d97b983fe8f83c9876cd43f/MTE_DenimFitGuide.jpg?w=856&q=80&fm=webp",
+      h2: "Good Jeans: The Denim Fit Guide",
+      p: "Introducing the perfect pairs for every wear. From rise to size, here's how to find your new favorite jeans.",
+      link: "findYourFit.html",
+      name: "find Your fit",
+    },
+    {
+      img_Url:
+        "https://images.ctfassets.net/5de70he6op10/4KdZlgMAtV7l3IUUu24UNs/4db32dcfcdb43ebcd7c505c45e8f8183/MTE_NatalieL.jpg?w=856&q=80&fm=webp",
+      h2: "Nathalie Lété for Anthropologie",
+      p: "Introducing: the whimsical new collection from the prolific Parisian painter & ceramicist.",
+      link: "ShopTheExclueCollab,html",
+      name: "Shop the exclucive Collab",
+    },
+    {
+      img_Url:
+        "https://images.ctfassets.net/5de70he6op10/2oIntG5FdfvDGzn3VJWT7T/0c6fd2ab04fcc5f76bfa6801968081f0/MTE_3.jpg?w=856&q=80&fm=webp",
+      p: "Give a warm welcome to the season's best-and-brightest accents...",
+      h2: "Fall, Aglow",
+      link: "shopCandles&More.html",
+      name: "Shop Cabdles & More",
+    },
+  ];
+  main7Obj.map(function (el) {
+    box = document.createElement("div");
+
+    img = document.createElement("img");
+    img.setAttribute("src", el.img_Url);
+
+    h2 = document.createElement("h2");
+    h2.innerText = el.h2;
+
+    p = document.createElement("p");
+    p.innerText = el.p;
+
+    alink = document.createElement("a");
+    alink.setAttribute("href", el.link);
+    alink.innerText = el.name;
+    box.append(img, h2, p, alink);
+
+    document.querySelector("#main-7").append(box);
+  });
+</script>
