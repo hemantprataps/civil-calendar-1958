@@ -1,18 +1,35 @@
 
 /* Style the links insidebo the navigation bar */
+
+   
+ #header{
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+       position:sticky;
+
+       overflow:hidden;
+       background-color: aliceblue;
+      
+      
+
+  }
 #navbar{
-    border: 1px solid red;
+    border: px solid red;
     width:90%;
     height:50px;
     margin: auto;
-    
-
-
+    position:relative;
+      
+  
+  
 }
 #left-nav{
     float: right;
     display: flex;
     gap: 20px;
+    overflow:hidden;
+    
+
     
 }
 #nav-sticky{
@@ -21,12 +38,24 @@
     width:90%;
     height: auto;
     margin: auto;
+    position: sticky;
 }
 
 #left-navS{
     float: right;
     display: flex;
-    gap:10px;
+    gap:50px;
+
+
+}
+#left-navS input{
+  width: 270px;
+  height: 42px;
+}
+#left-navS i{
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
 
 }
 #rightS-nav{
@@ -43,14 +72,23 @@
     display:flex;
     height: 40px;
     width:90%;
-    border:1px solid red;
+    border:0px solid red;
     margin: auto;
       align-items: center;
+      justify-content:space-evenly;
+      font-size:small;
+      
+
+    
 
 
 }
+a{
+  text-decoration:none
+}
 #menu li{
-    text-decoration: none;
+  gap: 10px
+  ;
 
 }
 #offer {
@@ -215,7 +253,7 @@ img {vertical-align: middle;}
      height: 417px; 
     }
     #main-5{
-        border: 1px solid red;
+        border: px solid red;
         width:90%;
         height: 417px;
         margin: auto;
@@ -226,7 +264,7 @@ img {vertical-align: middle;}
 
     }
     #main-5 >div{
-        border: 1px solid darkblue;
+        border: px solid darkblue;
         width: 30%;;
         margin:auto;
         align-items: center;
@@ -243,12 +281,130 @@ img {vertical-align: middle;}
     #main-5>div div{
      align-items: center;  
     }
-
+    #main-6{
+    padding-top: 150px;
+      width:90%;
+      height: 100px;
     
+      margin: auto;
 
+    }
+   #main-6 >img{
+      width: 100%;
+      height: 100px;
 
+    }
+    body{
+      background-color:rgb(252, 253,249,1)
 
+      
+    }
+    #main-7{
+   
+  
+      width: 90%;
+      display: flex;
+      grid-template-columns: 30%;
+      
+    
+      margin: auto;
+      height: 200px;
+        }
+        #main-7>div{
+         
+          
+          width: 300px;
+             margin: auto;
+             height: 100%;
+            }
+            #main-8{
+   
+  
+              width: 90%;
+              display: flex;
+              grid-template-columns: 30%;
+             
+              margin: auto;
+              height: auto;
+                }
+                #main-8>div{
+                 
+                 
+                  width: 347px;
+                     margin: auto;
+                     height: 417px;
+                    }
+                    #main-8>div>img{
+                      width:100%;
+                      height:100%
+                    }
+                    #main-9{
+   
+  
+                      width: 90%;
+                      display: flex;
+                      grid-template-columns: 30%;
+                     
+                      margin: auto;
+                      height: auto;
+                        }
+                        #main-9>div{
+                         
+                         
+                          width: 347px;
+                             margin: auto;
+                             height: 417px;
+                            }
+                            #main-9>div>img{
+                              width:347px;
+                              height:73px
+                            }
+                            #main-9 a{
+                              align-items: center;
+                            }
+            .center{
+              text-align: center;
+              border:#717171
+            }
 
+            #main-9 div #border{
+            border: black;
+            }
+          
+          #AboutUs {
+            display: flex;
+            width: 90%;
+            margin: auto;
+            justify-content: space-between;
+          }
+          #ft1{
+            width: 90%;
+            margin: auto
+          }
+
+      #mail{
+          display: flex;
+          width: 439px;
+          height: 105px;
+          margin-bottom: 50px;
+        
+        justify-content:space-between
+      }
+      #inputEmail input{
+        width: 393px;
+        height: 45px;
+      }
+      #inputEmail button{
+        width: 118px;
+        height: 45px;
+      }
+
+ li{
+  text-decoration: none;
+  list-style-type:none
+}
+
+     
 
 
 

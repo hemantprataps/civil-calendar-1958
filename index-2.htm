@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="index-2.css" />
+    <link rel="stylesheet" href="width.css">
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -15,9 +18,35 @@
     <div id="navbar">
       <div id="left-nav">
         <div>English</div>
-        <a href="">SignUp/SingIn</a>
+        <a href="Signup.htm">SignUp/SingIn</a>
+        <div> <button class="open-button" onclick="openForm()">Open Form</button>
+
+          <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <h1>Login</h1>
+      
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required />
+      
+              <label for="psw"><b>Password</b></label>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                name="psw"
+                required
+              />
+      
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">
+                Close
+              </button>
+            </form>
+          </div></div>
       </div>
     </div>
+   
+   <div id="header">
+   
     <div id="nav-sticky">
       <div id="left-navS">
         <div><input type="search" placeholder="Search" /></div>
@@ -46,17 +75,19 @@
     </div>
     <div id="menu">
       <li><a href="">Furiture</a></li>
-      <li>Decor</li>
-      <li>Kitchen & Dining</li>
-      <li>Candles</li>
-      <li>Bedding</li>
-      <li>Bath</li>
-      <li>Sationery</li>
-      <li>Kids</li>
-      <li>Outdoor</li>
-      <li>Gift & Candles</li>
-      <li>Sale</li>
+      <li><a href="">New!</a></li>
+      <li><a href="">Dresses</a></li>
+      <li><a href="">Clothing</a></li>
+      <li><a href="">Shoes</a></li>
+      <li><a href="">Accessories</a></li>
+      <li><a href="">Gifts & Candles</a></li>
+      <li><a href="">Home & Furiture</a></li>
+      <li><a href="">Beauty & Wellness</a></li>
+      <li><a href="">Garden & Outdoor</a></li>
+      <li><a href="">Weddings</a></li>
+      <li><a href="">Sale</a></li>
     </div>
+   </div>
     <div id="offer">
       <img
         src="https://images.ctfassets.net/5de70he6op10/2HFTMrdLL0loq06gMx0wU5/0a00260465b9b79443808f5d2ceac408/082522_30OffBeddingBathRugsCurtains_HPGSecondaryBanner_LS_01.jpg?w=2882&q=80&fm=webp"
@@ -128,7 +159,7 @@
     </div>
     
         </div>
-      </div>
+      
       <div id="main-4">
         <div> <img src="https://images.ctfassets.net/5de70he6op10/2CvA4aFFgXqHLftfyhqy8b/8b92a24311bde2bd5b0885fc4c62d0e6/ALiving_HPG_LS_04-1-461524608.jpg?w=1302&q=80&fm=webp" alt="">  </div>
         <div><img src="https://images.ctfassets.net/5de70he6op10/3W0B4B6KFf35hHxWxKSFLU/7036dc5cfb235f0ef733747697dc9cac/ALiving_HPG_LS_04-2.jpg?w=1302&q=80&fm=webp" alt=""></div>
@@ -143,9 +174,122 @@
         </div>
         
       </div>
-      <div id="main-6"></div>
-
-    </main>
+      <div id="main-6">
+        <img src="https://images.ctfassets.net/5de70he6op10/tnwMf98WrLzJvHORas5fC/381eeaec38219b4659e03a30dd03bb9c/HomeL1_Gateway_LS_04-0.jpg?w=2640&q=80&fm=webp" alt="">
+      </div>
+      <div id="main-7">
+        <div></div>
+        <div></div>
+        <div></div>
+         </div>
+         <div id="main-8">
+          <div><img src="https://images.ctfassets.net/5de70he6op10/6XejKK7wABkPJDAADkVmZ5/3427f84fc6221686cf2c1726c30eeb70/HomeL1_Gateway_LS_05-1.jpg?w=856&q=80&fm=webp" alt=""></div>
+          <div><img src="https://images.ctfassets.net/5de70he6op10/3j9cWDPeDV24mItBHzCMpy/fd720252b838f210838b13b561af06e5/HomeL1_Gateway_LS_05-2.jpg?w=856&q=80&fm=webp" alt=""></div>
+          <div><img src="https://images.ctfassets.net/5de70he6op10/9fUxloTLUrGyBT4p1f92n/f66477ee2c46f3f3d2df50555542a60b/HomeL1_Gateway_LS_05-3.jpg?w=856&q=80&fm=webp" alt=""></div>
+         </div>
+         <div id="main-9">
+          <div><img src="https://images.ctfassets.net/5de70he6op10/7g7ZHaVt39w0CCLd3O0qke/403209ba2c4f5885fc9bfa13dbd3e462/HomeL1_Gateway_LS_08-1.jpg?w=856&q=80&fm=webp" alt="">
+           <div class="center">
+            <h1>Anthor Design Services</h1>
+            <p>Let's make your decorating dreams come true — from the cozy comfort of your home.</p>
+            <div class="center" class="border" >
+              <a href=""><p>book a free appinment today</p></a>
+            </div>
+           </div>
+          </div>
+          <div><img src="https://images.ctfassets.net/5de70he6op10/6qyHgZGFtupOWObJWdV3Wm/8804344079ae4623c4f9d9a45a3b0193/HomeL1_Gateway_LS_08-2.jpg?w=856&q=80&fm=webp" alt="">
+            <div class="center">
+             <h1>Anthor At Your Services</h1>
+             <p>We're here to help! Discover guides, resources, styling tips & more.</p>
+             <div class="center" id="border">
+               <a href=""><p>right this way</p></a>
+             </div>
+            </div>
+           </div>
+           <div><img src="https://images.ctfassets.net/5de70he6op10/k8kDADGs7wBTqS4n0kv06/71bcfaaba47b7dff1f6cd50fd5168724/HomeL1_Gateway_LS_08-3_copy.jpg?w=856&q=80&fm=webp" alt="">
+            <div class="center">
+             <h1>See It In Person</h1>
+             <p>Whether you're in California or Connecticut, there's a Design Center near you!</p>
+             <div class="center" class="border">
+               <a href=""><p>find a store</p></a>
+             </div>
+            </div>
+           </div>
+         </div>
+        
+    </main> 
+    <footer>
+      <div id="AboutUs">
+        <div id="mail">
+          <div><h2>Sign Up for Email</h2>
+          <p>Receive early access to new arrivals, sales, exclusive content, events and much more!</p>
+          </div>
+        </div>
+        <div id="inputEmail">
+          <div><label for="">
+            Email*
+          </label></div>
+          <input type="email">
+         <button>Submit</button>
+        </div>
+        
+      </div>
+      <div>
+        <div style="display: flex" id="ft1">
+          <div>
+            <li>Help</li>
+            <li>Track Your Order</li>
+            <li>Start A Return Or Exchange (US)</li>
+            <li>Return & Exchange</li>
+            <li>Shipping</li>
+            <li>Coustomer Srvice</li>
+            <li>Current Promototions</li>
+            <li>Product Recllsas</li>
+          </div>
+          <div>
+            <ul>
+              <li>About Us</li>
+              <li>Our Story</li>
+              <li>Events</li>
+              <li>A Greater Good</li>
+              <li>Diversity & inclusion</li>
+              <li>Stories</li>
+              <li></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>Services</li>
+              <li>anthroPerks</li>
+              <li>Gift Card</li>
+              <li>AnthroLiving B2B</li>
+              <li>Furiture:Guides & Services</li>
+              <li>Store Pickuop & Collection Points</li>
+              <li>Klarna</li>
+              <li></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>Connect</li>
+              <li>Contact Us</li>
+              <li>Stay Connected</li>
+              <li>Careers</li>
+              <li>Styling Services</li>
+              <li>Request A Catalong</li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <div><i class="fa-regular fa-location-dot"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div></div>
+      <div></div>
+    </footer>
+   </div>
   </body>
 </html>
 <script>
