@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="show.css" />
+  </head>
+  <body>
+    <header></header>
+    <div id="show">
+      <div id="sale"><a href="">Sale</a></div>
+      <div id="dress">Clothing / Dress</div>
+      <div id="item">
+        <div></div>
+        <div id="data"></div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  product = JSON.parse(localStorage.getItem("product_details"));
+  product.map(function (el, i) {
+    img = document.createElement("img");
+    img.setAttribute("src", el.imgUrl);
+    document.querySelector("#item >div:nth-child(1)").append(img);
+    line = document.createElement("h1");
+    line.innerText = el.line;
+    lineDiv = document.createElement("div");
+    lineDiv.setAttribute("id", "h2");
+
+    var a = document.createElement("a");
+    var link = document.createTextNode("By Anthropologie");
+    a.appendChild(link);
+    a.href = "https://www.geeksforgeeks.org";
+
+    lineDiv.append(line, a);
+
+    document.querySelector("#data").append(lineDiv);
+  });
+</script>
